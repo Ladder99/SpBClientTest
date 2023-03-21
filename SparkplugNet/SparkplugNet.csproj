@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net7.0</TargetFrameworks>
+        <AssemblyName>SparkplugNet</AssemblyName>
+        <RootNamespace>SparkplugNet</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PackageId>SparkplugNet</PackageId>
+        <Authors>SeppPenner</Authors>
+        <Company>Hämmer Electronics</Company>
+        <Copyright>Copyright © Hämmer Electronics</Copyright>
+        <Description>SparkplugNet is a library to use the Sparkplug IIoT standard in .Net.</Description>
+        <PackageTags>c# csharp sparkplug mqtt</PackageTags>
+        <PackageProjectUrl>https://www.nuget.org/packages/SparkplugNet/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/SeppPenner/SparkplugNet</RepositoryUrl>
+        <PackageIcon>Icon.png</PackageIcon>
+        <RepositoryType>Github</RepositoryType>
+        <PackageReleaseNotes>Version 1.2.0.0 (2022-11-20): Updated nuget packages, removed support for Net5.0, added support for Net7.0, fixed a bug with the device storage (Thanks to @Patrick2607, https://github.com/SeppPenner/SparkplugNet/pull/31).</PackageReleaseNotes>
+        <PackageLicenseFile>License.txt</PackageLicenseFile>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        
+        <PackageReference Include="MQTTnet" Version="4.1.4.563" />
+        <PackageReference Include="protobuf-net" Version="3.2.0" />
+        <PackageReference Include="Serilog" Version="2.12.0" />
+    </ItemGroup>
+
+</Project>
